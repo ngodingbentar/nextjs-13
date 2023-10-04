@@ -1,3 +1,4 @@
+import AddProductButton from "../components/AddProductButton"
 import { Product } from "../typings"
 import { addProductToDatabase } from "./actions/serverActions"
 
@@ -15,10 +16,11 @@ async function Home () {
   return (
     <main className="p-10">
       <h1>Product warehouse</h1>
+      <AddProductButton />
 
       <form
         action={addProductToDatabase}
-        className="flex flex-col gap-5 max-w-xl mx-auto p-5 bg-gray-200"
+        className="flex flex-col gap-5 max-w-xl mx-auto p-5 bg-gray-300"
         >
         <input name="product" />
         <input name="price"/>
