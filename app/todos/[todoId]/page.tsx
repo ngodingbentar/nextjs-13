@@ -13,7 +13,6 @@ type PageProps = {
 const fetchTodo = async (todoId: string) => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId}`, { next: {revalidate: 60 }})
   const todo: Todo = await res.json()
-  console.log('todo', todo)
   return todo
 } 
 
@@ -47,7 +46,6 @@ export async function generateStaticParams () {
 
   // for this demo, we are only prebuilding the first 10 page to avoid being rate limited by the demo api
   const trimmedTodos = todos.splice(0, 10)
-  console.log('trimmedTodos', trimmedTodos)
 
   return trimmedTodos.map((todo) => ({
     todoId: todo.id.toString()
