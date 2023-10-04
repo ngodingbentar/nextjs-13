@@ -3,10 +3,9 @@ import TodosList from './TodosList'
 
 function Todos() {
   return (
-    <>
-      <div>Todos</div>
-      <TodosList />
-    </>
+    <div>
+      <h1>This is where the todo will be show...</h1>
+    </div>
   )
 }
 
