@@ -10,6 +10,10 @@ function Header () {
       <Link href="/todos" className="px-2 py-1 bg-white text-blue-500">
         Todos
       </Link>
+
+      <Link href="/search" className="px-2 py-1 bg-white text-blue-500">
+        Search
+      </Link>
     </header>
   )
 }
