@@ -6,10 +6,6 @@ function Header () {
       <Link href="/" className="px-2 py-1 bg-white text-blue-500">
         Home
       </Link>
-
-      <Link href="/todos" className="px-2 py-1 bg-white text-blue-500">
-        Todos
-      </Link>
     </header>
   )
 }
